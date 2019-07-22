@@ -1,0 +1,23 @@
+SMAP
+registroUsuario_jsp.java
+JSP
+*S JSP
+*F
++ 0 registroUsuario.jsp
+registroUsuario.jsp
++ 1 publicidad.jsp
+publicidad.jsp
+*L
+1,19:52
+20:71,2
+21,12:73
+33:85,2
+34,84:87
+119,5:173
+123,5:178
+132,19:183
+5#1,12:202
+150#0,2:213
+152:215,2
+153,8:217
+*E

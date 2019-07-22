@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+*{
+    box-sizing:  border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+/*---------------CONTENEDOR---------------*/
+.contenedor__rutina h1{
+    width: 100%;
+    position: relative;
+    right: 160px;
+    top: 20px;
+}
+
+.icon-menu{
+    position: relative;
+    left: 110px;
+    bottom: 20px;
+    width: 20%;
+}
+
+.banner__titulo{
+    position: relative;
+    bottom: 180px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #fff;
+    font-weight: normal;
+    z-index: -1;
+}
+/*---------------BANNER RUTINAS---------------*/
+.banner__rutinas .banner__img{
+    position: relative;
+    width: 100%;
+    bottom: 50px;;
+    z-index: -1;
+}
+
+.banner__rutinas{
+    margin-bottom: -100px;
+}
+
+/*---------------CONTENEDOR---------------*/
+.contenedor{
+    width: 100%;
+}
+
+.descripcion__txt{
+    margin: 20px 0;
+}
+
+.descripcion__txt h1{
+    text-transform: uppercase;
+    width: 90%;
+    font-size: 30px;
+    color: #333;
+}
+
+.border__txt{
+    border-bottom: solid 4px #F5B041;
+    width: 30px;
+}
+
+.descripcion__txt p{
+    margin: 15px 0;
+    font-size: 15px;
+    color: #424949;
+}
+
+/*---------------CLASES DE RUTINAS---------------*/
+/*---------------CLASES DEL POSICIONAMIENTO IZQUIERDA---------------*/
+.img-clases img{
+    width: 100%;
+    margin: 30px 0;
+}
+
+.clases_der, .clases_der{
+    width: 100%; 
+    padding: 45px 0;
+}
+.clases_izq p, .clases_der p {
+    color: #A6ACAF;
+    margin-top: 10px;
+}
+
+.clases_izq h2, .clases_der h2{
+    color: #F5B041;
+    margin-bottom: 10px;
+}
+
+.btn-clases{
+    text-decoration: none;
+    padding: 10px;
+    color:  #F5B041;
+    border: solid 1px  #F5B041;
+    position: relative;
+    top: 20px;
+    margin-left: 10px;
+}
+
+/*.clases_der img{
+    padding-top: 10px;
+}*/
+
+.btn-clases:hover{
+    background: #F5B041;
+    color: #fff;
+}
+
+/*---------------MODELO RESPONSIVE--------------*/
+@media (min-width: 1080px){
+    /*--------------HEADER--------------*/
+    .contenedor{
+        width: 100%;
+    }
+
+    .contenedor__rutina h1{
+        position: relative;
+        left: -1000px;
+        top: 30px;
+        font-size: 50px;
+    }
+    .icon-down-open{
+        display: none;
+    }
+    /*--------------BANNER--------------*/
+    .banner__rutinas img{
+        height: 800px;
+    }
+
+    .banner__rutinas h1{
+        font-size: 70px;
+        position: relative;
+        bottom: 500px;
+        font-weight: bold;
+    }
+
+    /*-------------DESCRIPCION-------------*/
+    .descripcion__txt{
+        margin: 100px 30px;
+    }
+
+    .descripcion__txt h1{
+        font-size: 40px;
+    }
+
+    .descripcion__txt p{
+        font-size: 20px;
+        width: 80%;
+    }
+
+    /*-------------CLASES RUTINA-------------*/
+    /*-------------POSICIONAMIUENTO IZQUIERDO-------------*/
+    .clases_izq{
+        display: flex;
+    }
+
+    .img-clases{
+        width: 100%;
+    }
+
+    .img-clases img{
+        width: 80%;
+        text-align: center;
+        margin: 0 50px;
+    }
+
+    .txt__clases {
+        margin:  0 auto;
+        position: relative;
+        left: -50px;
+
+    }
+
+    .txt__clases h2{
+        font-size: 40px;
+    }
+
+    .txt__clases p{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .txt__clases a{
+        padding: 20px 40px;
+        font-size: 15px;
+        position: relative;
+        top: 40px;
+        margin-left: 5px;
+    }
+
+    /*-------------POSICIONAMIUENTO DERECHO-------------*/
+    .clases_der{
+    }
+
+    .clases_der .txt__clases{
+        background: #fff;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        width: 100%;
+    }
+
+     .clases_der .txt__clases h2{
+      width: 50%;
+      position: absolute;
+       margin: 10px 40px;
+      top: 1px;
+      left: 60px;
+    }
+    
+    .clases_der .border__txt{
+        position: absolute;
+        top: 60px;
+        right: 1359px;
+    }
+    .clases_der p{
+        margin: 10px 150px;
+        position: relative;
+        right: 50px;      
+    }
+
+    .clases_der a{
+      position: relative;
+      right: 630px;
+      top: 100px;
+    }
+
+   .clases_der .img-clases {
+        width: 100%;
+        position: relative;
+        left: -50px;
+    }
+
+    .clases_der .img-clases img {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+    box-sizing:  border-box;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+
+.contenedor{
+    margin: auto;
+    width: 99%;
+}
+
+.banner__titulo , .banner__text{
+    color: #fff;
+}
+/*--------------Estilos del Header--------------*/
+
+.header{
+    height: 60px;
+}
+
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo ,.icon-menu{
+    margin: 5px;
+    color: #fff;
+}
+
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/*-------------------Estilo de banner-------------------*/
+
+.banner{
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 20px;
+}
+
+.banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.banner__text{
+    display: none;
+}
+/*---------------ESTILO CLASES DE RUTINAS DE EJERCICIO---------------*/
+/*---------------CONTENEDOR RUTINA---------------*/
+.descripcion__txt{
+    margin: 20px 0;
+}
+
+.descripcion__txt h1{
+    text-transform: uppercase;
+    width: 90%;
+    font-size: 30px;
+    color: #333;
+}
+
+.border__txt{
+    border-bottom: solid 4px #F5B041;
+    width: 30px;
+}
+
+.descripcion__txt p{
+    margin: 15px 0;
+    font-size: 15px;
+    color: #424949;
+}
+
+h2{
+    color: #F5B041;
+    margin-bottom: 10px;
+}
+
+p{
+    color: #A6ACAF;
+    margin-top: 10px;
+}
+
+.btn-clases{
+    text-decoration: none;
+    padding: 10px;
+    color:  #F5B041;
+    border: solid 1px  #F5B041;
+    position: relative;
+    top: 20px;
+    margin-left: 10px;
+}
+
+.btn-clases:hover{
+    background: #F5B041;
+    color: #fff;
+}
+
+
+.contenedor__imgDer .info{
+    height: auto;
+    padding-bottom: 35px;
+}
+
+.contenedor__imgIzq .info{
+    height: auto;
+    padding-bottom: 35px;
+}
+
+/*---------------Estiloas de footer---------------*/
+
+.footer{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer  [class^="icon-"]{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50px;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    margin: auto;
+
+}
+
+/*--------------ESTILO RESPONSIVE-------------*/
+@media(min-width:300px){
+    #btn-login{
+        position: relative;
+        top: -80px;
+    }
+
+    .banner__text{
+        display: none;
+    }
+
+    .banner__titulo{
+        display: none;
+    }
+}
+
+@media(min-width:350px){
+    #btn-login{
+        position: relative;
+        top: -100px;
+    }
+
+    .banner__text{
+        display: none;
+    }
+
+    .banner__titulo{
+        display: none;
+    }
+
+}
+
+@media(min-width:400px){
+    .banner__titulo{
+        display: block;
+        font-size: 25px;
+    }
+}
+
+@media(min-width:480px){
+    .logo{
+        font-size: 40px;
+    }
+
+    .banner__titulo{
+        display: block;
+        font-size: 30px;
+        margin: 5px 0;
+    }
+
+    .banner__text{
+        display: block;
+        font-size: 20px;
+        margin: 7px 0;
+    }
+
+    .info, .cursos{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -20px
+    }
+
+    .info__titulo{
+        font-size: 30px;
+        margin: 5px 0;
+    }
+
+    .cursos{
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+
+    .section__titulo{
+        margin-left: 30%;
+    }
+
+    .cursos__columna{
+        width: 48%;;
+    }
+
+    .footer  [class^="icon-"]{
+        margin: 0 10px;
+    }
+
+    #btn-login{
+        position: relative;
+        top: -100px;
+    }
+}
+
+@media(min-width:750px){
+    .banner__titulo{
+        font-size: 50px;
+    }
+
+    .cursos__titulo{
+        font-size: 30px;
+    }
+
+    #btn-login{
+        position: relative;
+        bottom: 200px;
+    }
+}
+
+@media(min-width:1024px){
+
+    .contenedor{
+        width: 1000px;
+    }
+
+    .nav{
+        position: static; 
+        width: auto;
+    }
+
+    .menu{
+        display: flex;
+    }
+
+    .section__titulo{
+        font-size: 50px;
+        width: 100%;
+        margin: 10px 0; 
+    }
+
+    .icon-menu{
+        display: none;
+    }
+
+    .menu__link{
+        background: none;
+        font-size: 20px;
+    }
+
+    .select{
+        background: #FBA919;
+        color: #fff;
+    }
+
+    .banner__titulo{
+        font-size: 60px;
+    }
+
+    .info__titulo{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .cursos__titulo{
+        font-size: 50px;
+    }
+
+    .banner__text{
+        font-size: 25px;    
+    }
+
+    .cursos__description{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    #btn-login{
+        position: relative;
+        top: -150px;
+    }
+
+
+}
+@media(min-width:1080px){
+
+    .contenedor{
+        width: 1200px;
+    }
+
+    .logo{
+        font-size: 60px;
+    }
+
+    #btn-login{
+        position: relative;
+        top: -200px;
+    }
+
+    .icon-down-open{
+        display: none;
+    }
+
+    .menu a{
+        position: relative;
+        top: 20px;
+        left: 50px;
+    }
+
+    .contenedor__imgDer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .contenedor__imgDer .class_img{
+        position: relative;
+        width: 50%;
+        left: 600px;
+    }
+
+    .contenedor__imgDer .info{
+        width: 50%;
+        height: 50%;
+        position: relative;
+        top: 50px;
+        right: 600px;
+
+    }
+
+    .contenedor__imgDer h2{
+        position: relative;
+        left: 150px;
+    }
+
+    h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor__imgDer p{
+        position: relative;
+        top: 40px;
+        right: 180px;
+    }
+
+    .class__info{
+        padding-right:  100px;
+    }
+
+    .contenedor__imgDer a{
+        position: relative;
+        top: 150px;
+        right: 500px;
+    }
+
+    .btn-clases{
+        height: 10%;  
+    }
+
+    .contenedor__imgIzq{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .contenedor__imgIzq .class_img{
+        position: relative;
+        width: 50%;
+    }
+
+    .contenedor__imgIzq .info{
+        width: 50%;
+        height: 50%;
+        position: relative;
+        top: 20px;
+    }
+
+    .contenedor__imgIzq h2{
+        position: relative;
+        left: 150px;
+        top: 20px ;
+    }
+
+    .contenedor__imgIzq p{
+        position: relative;
+        top: 60px;
+        right: 150px;
+    }
+
+    .contenedor__imgIzq a{
+        position: relative;
+        top: 180px;
+        right: 480px;
+    }
+}

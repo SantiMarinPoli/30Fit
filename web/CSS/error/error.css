@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*------------------------------------------HEADER------------------------------------------------*/
+.logo{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1.5px;
+    padding: 20px;
+    color: white;
+    font-weight: 500;
+    width: 80%;
+    position: relative;
+    left: -20px;;
+}
+
+.contenedor__error{
+    width: 100%;
+    
+    position: static;
+    z-index: -1;
+    
+}
+
+/*------------------------------------------CONTENEDOR ERROR 404------------------------------------------------*/
+.error{
+    font-family: 'Anton', sans-serif;
+    color: #CACFD2;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 0.3em;
+    position: relative;
+    margin: 0 80px;
+    top: 20px;
+    z-index: -1;
+}
+
+.error__404{
+    font-family: 'Anton', sans-serif;
+    color: #F5B041;
+    font-size: 8em;
+    text-align: center;
+    letter-spacing: 10px;
+    position: relative;
+    text-align: center;
+    margin: 0 20px;
+    width: 90%;
+    z-index: -1;
+}
+
+.span__error{
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    color: #626567;
+    font-size: 25px;
+}
+
+.txt-error{
+    border-bottom: solid 1px #626567;
+    border-top: solid 1px #626567;
+    text-align: center;
+    width: 80%;
+    position: relative; 
+    margin: 0 35px;
+    color: #626567;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    background: #fff;
+    z-index: -1;
+}
+
+.img-error{
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
+    text-align: center;
+} 
+/*------------------------------------------DESEÑO RESPONSIVE------------------------------------------------*/
+@media (min-width:450px){
+
+    .logo{
+        position: relative;
+        left: -250px;
+    }
+}
+
+@media (min-width:720px){
+
+    .logo{
+        position: relative;
+        width: 250px;;
+        left: -150px;
+    }
+
+    .img-error{
+        width: 80%;
+        margin: 20px 80px;
+        padding: 30px;
+    }
+
+    .txt-error {
+        position: relative;
+        left: 40px;
+    }
+
+    .txt-error span{
+        font-size: 30px;
+    }  
+}
+
+
+
+@media (min-width:1024px){ 
+    .logo{
+        position: relative;
+        left: -150px;
+    }
+
+    .img-error{
+        width: 40%;
+        margin: 20px 400px;
+        padding: 20px;
+    }
+
+    .txt-error {
+        margin: 20px 150px;
+        padding: 20px;
+    }
+
+    .txt-error span{
+        font-size: 40px;
+    }  
+}
+

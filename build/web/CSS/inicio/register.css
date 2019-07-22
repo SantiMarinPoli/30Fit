@@ -1,0 +1,208 @@
+/*-------------------------FORMULARIOS-------------------------*/
+
+.form-register{
+    width: 98%;
+    max-width: 500px;
+    margin: auto;
+    background: #EAEDED;
+    border-radius: 7px;
+    margin-bottom: 80px;
+}
+
+.form__titulo{
+    background: #EB984E;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid #7B7D7D  ;
+}
+
+.contenedor-inputs{
+    padding: 10px 30px;
+    justify-content: space-between;
+}
+
+input ,select{
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+
+.input-100{
+    width: 85%;
+    box-sizing:  border-box;
+    margin-bottom: 15px;
+}
+
+.input-50{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+.btn-enviar{
+    background: #EB984E;
+    color: white;
+    width: 100%;
+    margin: 7px auto;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-enviar:active{
+    transform: scale(1.05);
+}
+
+.form__link{
+    width: 100%;
+    margin: 7px; 
+    text-align: center;
+    font-size: 14px;
+}
+
+/*---------------------IMAGENES DE ICON OJO--------------------------*/
+#img-ojo-1 , #img-ojo-2{
+    cursor: pointer;
+    display: block;
+    position: relative;
+    bottom: 50px;
+    width: 30px;
+    left: 85%;
+    margin: 0 10px;
+}
+
+select{
+    width: 40%;
+}
+
+/*---------------------REQUISITO DE VCALIDACION--------------------------*/
+
+.ul-usuario{
+    width: 100%;
+    position: relative;
+    bottom: 10px;
+}
+
+.ul-password{
+    position: relative;
+    top: -30px;
+    list-style: none;
+    margin: -30px 5px;
+    color: #979A9A;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.ul-usuario{
+    position: relative;
+    bottom: 15px;
+    list-style: none;
+    margin: 0 5px;
+    color: #979A9A;
+    font-size: 12px;
+    padding: 10px 0 0 0;
+}
+
+/*--------------------- MENSAJES DE ERRORES--------------------------*/
+
+#msg-nombre, #msg-apellido, #msg-correo, #msg-fechaNacimiento, #msg-numeroCelular{
+    position: relative;
+    top: -20px;
+}
+#error2, #msg-password{
+    position: relative;
+    top: -70px;
+
+}
+
+#msg-error, #error3, #msg-repitaPassword{
+    position: relative;
+    top: -45px;
+}
+
+#msg-usuario, #error1{
+    position: relative;
+    top: -20px;
+}
+
+#msg-ciudad, #msg-pais{
+    position: relative;
+    top: -15px;
+}
+
+/*---------------------BOTON LOGIN--------------------------*/
+#btn-login{
+    display: block;
+    /*    margin-top: -55px;*/
+    position: relative;
+    bottom: 250px;
+    margin: auto;
+}
+
+/*---------------------CONTENEDOR GENERO--------------------------*/
+.contenerdor-genero  {
+    position: relative;
+    top: -30px;
+    width: 100%;
+}
+
+.form-register input[type="radio"]{
+    display: none;
+}
+
+.form-register  .label-genero{
+    color: grey;
+    padding: 5px 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-register  .label-genero:hover{
+    background: #EB984E;
+}
+
+.form-register  .label-genero:before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: solid 3px gray;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 4px;
+}
+
+.form-register input[type="radio"]:checked + .label-genero{
+    padding: 15px;
+    background: #EB984E;
+    border-radius: 2px;
+    color: white;
+}
+
+.form-register input[type="radio"]:checked + .label-genero:before{
+    display: none;
+}
+
+label, option, select, input{
+    color: gray;
+}
+
+#pais, #ciudad{
+    margin: 10px 5px;
+}
+

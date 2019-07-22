@@ -1,0 +1,16 @@
+SMAP
+perfil_jsp.java
+JSP
+*S JSP
+*F
++ 0 perfil.jsp
+perfil.jsp
++ 1 navegador.jsp
+navegador.jsp
+*L
+5,17:49
+5#1,26:66
+21#0,3:91
+24:94,2
+25,4:96
+*E
